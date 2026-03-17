@@ -11,16 +11,30 @@ pipeline {
 
         stage('Build Image') {
             steps {
-                sh 'docker build -t renu_img .'
+                sh 'docker build -t renu_img:latest .'
+            }
+        }
+
+        stage('Stop Old Container') {
+            steps {
+                sh 'docker stop cont5 || true'
+                sh 'docker rm cont5 || true'
             }
         }
 
         stage('Run Container') {
             steps {
-                sh 'docker stop cont5 || true'
-                sh 'docker rm cont5 || true'
-                sh 'docker run -d -p 8085:80 --name cont5 renu_img'
+                sh 'docker run -d -p 8085:80 --name cont5 renu_img:latest'
             }
+        }
+    }
+
+    post {
+        success {
+            echo 'Deployment Successful 🚀'
+        }
+        failure {
+            echo 'Deployment Failed ❌'
         }
     }
 }
