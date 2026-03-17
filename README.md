@@ -1,14 +1,10 @@
 # 🚀 Docker CI/CD Project using Jenkins
 
 ## 📌 Project Overview
-
 This project demonstrates how to build and deploy a Dockerized web application using a Jenkins CI/CD pipeline.
 It automates the process from code push to container deployment on an EC2 instance.
-
 ---
-
 ## 🧱 Tech Stack
-
 * 🐳 Docker
 * ⚙️ Jenkins
 * 🌐 Nginx
@@ -18,7 +14,6 @@ It automates the process from code push to container deployment on an EC2 instan
 ---
 
 ## 📁 Project Structure
-
 ```
 docker-Sample-project/
 │── Dockerfile
@@ -29,7 +24,6 @@ docker-Sample-project/
 ---
 
 ## ⚙️ How It Works
-
 1. Developer pushes code to GitHub
 2. Jenkins pulls the latest code
 3. Docker image is built using Dockerfile
@@ -37,7 +31,6 @@ docker-Sample-project/
 5. New container is deployed automatically
 
 ---
-
 ## 🐳 Dockerfile
 
 ```dockerfile
@@ -49,7 +42,6 @@ EXPOSE 80
 ---
 
 ## 🔄 Jenkins Pipeline
-
 ```groovy
 pipeline {
     agent any
@@ -84,25 +76,21 @@ pipeline {
 ## ▶️ How to Run Locally
 
 ### Step 1: Build Image
-
 ```
 docker build -t renu_img .
 ```
 
 ### Step 2: Run Container
-
 ```
 docker run -d -p 8080:80 renu_img
 ```
 
 ### Step 3: Access Application
-
 ```
 http://<your-ec2-ip>:8080
 ```
 
 ---
-
 ## 🔐 Jenkins Setup
 
 1. Install Jenkins on EC2
