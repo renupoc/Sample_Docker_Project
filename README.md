@@ -1,10 +1,10 @@
 # 🚀 Docker CI/CD Project using Jenkins
 
-## 📌 Project Overview
+Project Overview
 This project demonstrates how to build and deploy a Dockerized web application using a Jenkins CI/CD pipeline.
 It automates the process from code push to container deployment on an EC2 instance.
 ---
-## 🧱 Tech Stack
+Tech Stack
 * 🐳 Docker
 * ⚙️ Jenkins
 * 🌐 Nginx
