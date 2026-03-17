@@ -101,7 +101,7 @@ http://<your-ec2-ip>:8085
 ```
 ---
 
-Key Learnings
+Key Learnings..
 
 * Docker image creation and container management
 * Jenkins pipeline automation
