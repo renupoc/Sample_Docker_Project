@@ -1,4 +1,4 @@
-FROM nginx
+FROM nginx:latest
 COPY index.html /usr/share/nginx/html/index.html
-VOLUME ['/vol1']
+VOLUME ["/vol1"]
 EXPOSE 80
