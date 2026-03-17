@@ -101,13 +101,10 @@ http://<your-ec2-ip>:8080
 ---
 
 ## 🌐 Output
-
 Application will be available at:
-
 ```
 http://<your-ec2-ip>:8085
 ```
-
 ---
 
 ## 💡 Key Learnings
@@ -118,13 +115,9 @@ http://<your-ec2-ip>:8085
 * Troubleshooting real-world issues
 
 ---
-
 ## 🏆 Conclusion
-
 This project demonstrates a complete DevOps workflow using Docker and Jenkins. It simulates a real-world CI/CD pipeline used in production environments.
-
 ---
 
 ## 👩‍💻 Author
-
 Renu
